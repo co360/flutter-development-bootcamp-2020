@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
                 backgroundImage: AssetImage("images/profile_pic.jpeg"),
               ),
               Text(
-                "Your NAME...",
+                "Full Name",
                 style: TextStyle(
                   fontSize: 40.0,
                   fontWeight: FontWeight.bold,
@@ -33,12 +33,61 @@ class MyApp extends StatelessWidget {
                   fontFamily: 'Pacifico',
                 ),
               ),
-              Container(
-                height: 40.0,
-                width: 150.0,
-                color: Colors.white,
-                child: Text("Email")
+              Text(
+                "JOB PROFILE",
+                style: TextStyle(
+                  fontSize: 25.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                  fontFamily: 'Source Sans Pro',
+                  letterSpacing: 2.5
+                ),
               ),
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+                child: Divider(
+                  color: Colors.teal.shade100,
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 40 ),
+                child: ListTile(
+                leading: Icon(
+                  Icons.phone,
+                  color: Colors.teal.shade900,
+                  size: 25.0,
+                ),
+                title: Text(
+                  '+91-9876543210',
+                  style: TextStyle(
+                    color: Colors.teal.shade900,
+                    fontSize: 16.0,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 40 ),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal.shade900,
+                    size: 25.0,
+                  ),
+                  title: Text(
+                    'email@domain.com',
+                    style: TextStyle(
+                      color: Colors.teal.shade900,
+                      fontSize: 16.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              )
             ],
           ),
         ),
@@ -46,11 +95,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-//
-//child: Container(
-//height: 50.0,
-//width: 100.0,
-//margin: EdgeInsets.all(20),
-//padding: EdgeInsets.all(10),
-//color: Colors.deepPurpleAccent,
-//child: Text("Hello World"),
