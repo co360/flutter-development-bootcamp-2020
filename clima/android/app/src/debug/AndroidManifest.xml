@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< Updated upstream
+    package="co.appbrewery.clima">
+=======
+    package="com.example.clima">
+>>>>>>> Stashed changes
+    <!-- Flutter needs it to communicate with the running application
+         to allow setting breakpoints, to provide hot reload, etc.
+    -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+</manifest>
