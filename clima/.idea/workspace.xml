@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd2a5700-06e5-47f9-aede-921ac24d7b75" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="clima" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -24,7 +28,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -32,6 +35,7 @@
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="experimental" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RunManager" selected="Flutter.main.dart">
@@ -45,6 +49,9 @@
         <item itemvalue="Dart Command Line App.scratch.dart" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -64,22 +71,26 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="555" y="215" width="800" height="684" key="#Notifications/0.27.1920.1053/1920.0.1280.1024@0.27.1920.1053" timestamp="1593902499104" />
+    <state x="480" y="288" width="950" height="537" key="#PSD" timestamp="1593905111636">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="480" y="288" width="950" height="537" key="#PSD/0.27.1920.1053/1920.0.1280.1024@0.27.1920.1053" timestamp="1593905111636" />
     <state x="418" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593895133152">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="418" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053/1920.0.1280.1024@0.27.1920.1053" timestamp="1593895133152" />
-    <state x="559" y="290" width="791" height="534" key="#main.dart" timestamp="1593896971681">
+    <state x="559" y="290" width="791" height="561" key="#main.dart" timestamp="1593905717237">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="559" y="290" width="791" height="534" key="#main.dart/0.27.1920.1053/1920.0.1280.1024@0.27.1920.1053" timestamp="1593896971681" />
+    <state x="559" y="290" width="791" height="561" key="#main.dart/0.27.1920.1053/1920.0.1280.1024@0.27.1920.1053" timestamp="1593905717237" />
     <state x="818" y="320" width="274" height="474" key="AndroidProcessChooserDialog" timestamp="1593888508120">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="818" y="320" width="274" height="474" key="AndroidProcessChooserDialog/0.27.1920.1053/1920.0.1280.1024@0.27.1920.1053" timestamp="1593888508120" />
-    <state x="743" y="311" width="489" height="491" key="FileChooserDialogImpl" timestamp="1593902471599">
+    <state x="743" y="311" width="489" height="491" key="FileChooserDialogImpl" timestamp="1593905644331">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="743" y="311" width="489" height="491" key="FileChooserDialogImpl/0.27.1920.1053/1920.0.1280.1024@0.27.1920.1053" timestamp="1593902471599" />
+    <state x="743" y="311" width="489" height="491" key="FileChooserDialogImpl/0.27.1920.1053/1920.0.1280.1024@0.27.1920.1053" timestamp="1593905644331" />
     <state width="1874" height="275" key="GridCell.Tab.0.bottom" timestamp="1593897647874">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -100,6 +111,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="524" y="251" width="861" height="612" key="NewModule_or_Project.wizard/0.27.1920.1053/1920.0.1280.1024@0.27.1920.1053" timestamp="1593901852434" />
+    <state x="441" y="188" width="1037" height="737" key="SettingsEditor" timestamp="1593905708045">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="441" y="188" width="1037" height="737" key="SettingsEditor/0.27.1920.1053/1920.0.1280.1024@0.27.1920.1053" timestamp="1593905708045" />
     <state x="37" y="205" width="1720" height="853" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1593902539730">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -108,6 +123,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="719" y="473" width="481" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1920.1053/1920.0.1280.1024@0.27.1920.1053" timestamp="1593902577031" />
+    <state x="514" y="85" width="892" height="936" key="find.popup" timestamp="1593905566385">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="514" y="85" width="892" height="936" key="find.popup/0.27.1920.1053/1920.0.1280.1024@0.27.1920.1053" timestamp="1593905566385" />
     <state x="623" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1593902682929">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
