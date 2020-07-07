@@ -46,6 +46,7 @@ class _PriceScreenState extends State<PriceScreen> {
       onSelectedItemChanged: (selectedItem) {
         setState(() {
           selectedCurrency = currenciesList[selectedItem];
+          getCurrencyCards();
         });
       },
       children: items,
