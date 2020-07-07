@@ -28,7 +28,7 @@ class _PriceScreenState extends State<PriceScreen> {
       onChanged: (value) {
         setState(() {
           selectedCurrency = value;
-          getRate(crypto: 'BTC', currency: selectedCurrency);
+          getCurrencyCards();
         });
       },
     );
@@ -54,15 +54,15 @@ class _PriceScreenState extends State<PriceScreen> {
 
   void getRate({String crypto, String currency}) async {
     var coinData = await ExchangeRate().getExchangeRate(crypto: crypto, currency: currency);
+    //print(coinData);
     price = coinData['rate'];
-    //print(price);
   }
 
   List<Widget> getCurrencyCards() {
-    List<Widget> cards;
+    List<Widget> cards = [];
     for (String crypto in cryptoList) {
       getRate(crypto: crypto, currency: selectedCurrency);
-      print(price);
+      //print(price);
       Widget card = CurrencyCard(price: price, selectedCrypto: crypto, selectedCurrency: selectedCurrency).getCard();
       cards.add(card);
     }
@@ -72,7 +72,7 @@ class _PriceScreenState extends State<PriceScreen> {
 
   @override
   Widget build(BuildContext context) {
-    getRate(crypto: 'BTC', currency: selectedCurrency);
+    //getRate(crypto: 'BTC', currency: selectedCurrency);
     return Scaffold(
       appBar: AppBar(
         title: Text('🤑 Coin Ticker'),
@@ -81,6 +81,9 @@ class _PriceScreenState extends State<PriceScreen> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
+          Column(
+            children: getCurrencyCards(),
+          ),
           //CurrencyCard(btcPrice: btcPrice, selectedCurrency: selectedCurrency),
           Container(
             height: 150.0,
@@ -89,9 +92,6 @@ class _PriceScreenState extends State<PriceScreen> {
             color: Colors.lightBlue,
             child: Platform.isIOS ? iosPicker() : androidDropdown(),
           ),
-          Column(
-            children: getCurrencyCards(),
-          )
         ],
       ),
     );
