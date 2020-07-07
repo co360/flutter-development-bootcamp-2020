@@ -36,6 +36,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 //Do something with the user input.
               },
               decoration: kTextFieldDecoration.copyWith(hintText: 'Enter your email'),
+              style: TextStyle(color: Colors.black),
             ),
             SizedBox(
               height: 8.0,
@@ -45,6 +46,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 //Do something with the user input.
               },
               decoration: kTextFieldDecoration.copyWith(hintText: 'Enter your password.'),
+              style: TextStyle(color: Colors.black),
             ),
             SizedBox(
               height: 24.0,
