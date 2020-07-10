@@ -3,8 +3,13 @@ import 'package:todoey/widgets/tasks_list.dart';
 import 'package:todoey/screens/add_task_screen.dart';
 import 'package:todoey/models/task.dart';
 
-class TasksScreen extends StatelessWidget {
+class TasksScreen extends StatefulWidget {
 
+  @override
+  _TasksScreenState createState() => _TasksScreenState();
+}
+
+class _TasksScreenState extends State<TasksScreen> {
   List<Task> tasks = [];
 
   @override
@@ -19,10 +24,6 @@ class TasksScreen extends StatelessWidget {
             context: context,
             builder: (context) => AddTaskScreen(
               addNewTask: (String newTaskText) {
-
-                print(newTaskText);
-                tasks.add(Task(taskText: newTaskText));
-                // FIXME: Some issue here...
                 setState(() {
                   tasks.add(Task(taskText: newTaskText));
                 });
