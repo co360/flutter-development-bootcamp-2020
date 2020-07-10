@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:todoey/widgets/tasks_list.dart';
 import 'package:todoey/screens/add_task_screen.dart';
+import 'package:todoey/models/task.dart';
 
 class TasksScreen extends StatelessWidget {
+
+  List<Task> tasks = [];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -11,7 +15,23 @@ class TasksScreen extends StatelessWidget {
         backgroundColor: Colors.lightBlueAccent,
         child: Icon(Icons.add, size: 40.0),
         onPressed: () {
-          showModalBottomSheet(context: context, builder: (BuildContext context) => AddTaskScreen(), isScrollControlled: true);
+          showModalBottomSheet(
+            context: context,
+            builder: (context) => AddTaskScreen(
+              addNewTask: (String newTaskText) {
+
+                print(newTaskText);
+                tasks.add(Task(taskText: newTaskText));
+                // FIXME: Some issue here...
+                setState(() {
+                  tasks.add(Task(taskText: newTaskText));
+                });
+                Navigator.pop(context);
+
+              },
+            ),
+            isScrollControlled: true
+          );
         },
       ),
       body: Column(
@@ -58,7 +78,7 @@ class TasksScreen extends StatelessWidget {
                     topLeft: Radius.circular(20.0)
                 ),
               ),
-              child: TasksList(),
+              child: TasksList(tasks: tasks),
             ),
           ),
         ],
